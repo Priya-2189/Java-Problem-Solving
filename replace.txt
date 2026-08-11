@@ -1,0 +1,34 @@
+class Solution {
+    int convertfive(int num) {
+        // Your code here
+        String s= String.valueOf(num);
+        char ch[]=s.toCharArray();
+        String res="";
+        for(int i=0;i<s.length();i++)
+        {
+          if(ch[i]=='0')
+          {
+            res = res+"5";
+           }
+           else
+           res=res+ch[i];
+        }
+     return Integer.parseInt(res);
+    }
+}class Solution {
+    int convertfive(int num) {
+        // Your code here
+        String s= String.valueOf(num);
+        String res="";
+        for(int i=0;i<s.length();i++)
+        {
+          if(s.charAt(i)=='0')
+          {
+            res = res+"5";
+           }
+           else
+           res=res+s.charAt(i);
+        }
+     return Integer.parseInt(res);
+    }
+}
